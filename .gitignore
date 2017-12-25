@@ -1,0 +1,32 @@
+node_modules/
+coverage/
+.nyc_output/
+.DS_Store
+*.swp
+*.swo
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Publish directory
+.publish
+
+# Editor artifacts
+.idea
+.vscode
+
+# ignore build and dist for now
+/demo/dist
+/dist
+/lib
+/coverage
+temp
+
+# ignore inline compiling
+/logs
