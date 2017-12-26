@@ -4,14 +4,20 @@
   "description": "update-yeoman-generator - Update your Yeoman generator with style",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/**/*.js --timeout 5000"
+    "test": "mocha"
   },
   "bin": {
     "update-yeoman-generator": "index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "update",
+    "yeoman",
+    "generator",
+    "update-yeoman-generator",
+    "script"
+  ],
+  "author": "Will Mendes <willmendesneto@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "chalk": "^2.3.0",
     "ejs": "^2.5.7",

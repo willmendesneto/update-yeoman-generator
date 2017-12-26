@@ -8,7 +8,7 @@ const {
   isEjsTemplate,
   writeFileAndCreateDirectories,
   removeFileAndEmptyDir,
-} = require('../../lib/util');
+} = require('../../../lib/util');
 
 const FILE_DELIM_OPEN = '0_-';
 const FILE_DELIM_CLOSE = '-_0';

@@ -1,9 +1,9 @@
 const { exec } = require('child_process');
 const { resolve, join } = require('path');
 const assert = require('assert');
-const { version } = require('../package.json');
+const { version } = require('../../package.json');
 
-const ROOT_APP = resolve(join(__dirname, './../'));
+const ROOT_APP = resolve(join(__dirname, './../../'));
 
 describe('Application bootstrap entry point', () => {
 
