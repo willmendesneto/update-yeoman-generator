@@ -1,10 +1,13 @@
 const assert = require('assert');
+const fs = require('fs');
 
 const {
   isYeomanTemplate,
   makeProps,
   renderBoilerplateFilename,
   isEjsTemplate,
+  writeFileAndCreateDirectories,
+  removeFileAndEmptyDir,
 } = require('../../lib/util');
 
 const FILE_DELIM_OPEN = '0_-';
@@ -90,6 +93,28 @@ describe('Utility functions', () => {
 
         it('should return `false` if filename does not contains EJS delimiters', () => {
             assert.equal(isEjsTemplate('app/templates/README.md', props, FILE_DELIM_OPEN, FILE_DELIM_CLOSE), false);
+        });
+    });
+
+    describe('writting and removing content', () => {
+        const filePath = __dirname + '/folder/file.txt';
+        const fileContent = 'My file content';
+        
+        it('should create file with content', () => {
+            writeFileAndCreateDirectories(filePath, fileContent);
+            assert.equal(fs.readFileSync(filePath, 'utf8'), fileContent);
+        });
+        
+        it('should remove file and folder', () => {
+            writeFileAndCreateDirectories(filePath, fileContent);
+            removeFileAndEmptyDir(filePath);
+            let fileExists = false;
+            try {
+                fileExists = fs.readFileSync(filePath, 'utf8');
+            } catch (error) {
+                fileExists = false;
+            }
+            assert.equal(fileExists, false);
         });
     });
 });

@@ -4,7 +4,7 @@
   "description": "update-yeoman-generator - Update your Yeoman generator with style",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --timeout 5000"
+    "test": "mocha test/**/*.js --timeout 5000"
   },
   "bin": {
     "update-yeoman-generator": "index.js"
