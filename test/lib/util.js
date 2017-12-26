@@ -5,7 +5,7 @@ const {
   makeProps,
   renderBoilerplateFilename,
   isEjsTemplate,
-} = require('../util');
+} = require('../../lib/util');
 
 const FILE_DELIM_OPEN = '0_-';
 const FILE_DELIM_CLOSE = '-_0';

@@ -1,5 +1,5 @@
 #! /usr/bin/env node
-const run = require('./run');
+const run = require('./lib/run');
 const chalk = require('chalk');
 
 const { argv } = require('yargs')
