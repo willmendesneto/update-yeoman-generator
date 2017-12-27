@@ -8,12 +8,23 @@ const {
   isEjsTemplate,
   writeFileAndCreateDirectories,
   removeFileAndEmptyDir,
+  fileExists,
 } = require('../../../lib/util');
 
 const FILE_DELIM_OPEN = '0_-';
 const FILE_DELIM_CLOSE = '-_0';
 
 describe('Utility functions', () => {
+    describe('fileExists', () => {
+        it('should return `true` if file exists', () => {
+            assert.equal(fileExists(__dirname + '/3-way-merge.js'), true);
+        });
+
+        it('should return `false` if file does not exist', () => {
+            assert.equal(fileExists(__dirname + '/this-file-does-not-exist.js'), false);
+        });
+    });
+
     describe('isYeomanTemplate', () => {
         it('should return `true` if file location contains template folder location', () => {
             assert(isYeomanTemplate('app/templates/index.js', 'app/templates'));

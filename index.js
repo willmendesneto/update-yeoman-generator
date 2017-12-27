@@ -1,6 +1,8 @@
 #! /usr/bin/env node
 const run = require('./lib/run');
 const chalk = require('chalk');
+const upath = require('upath');
+const { fileExists } = require('./lib/util');
 
 const { argv } = require('yargs')
   .describe('generator', 'Name of the Github generator. It should be in format `<github-user>/<github-repository>`')
@@ -25,6 +27,14 @@ const { argv } = require('yargs')
 console.log(chalk.blue('... Starting `update-yeoman-generator` script'));
 
 const { generator, template, ejsOpen, ejsClose } = argv;
+
+const yoRcJsonPath = upath.join(process.cwd(), '.yo-rc.json');
+
+if (!fileExists(yoRcJsonPath)) {
+  throw new Error(`
+  File '.yo-rc.json' is not present in the repository.
+  Please make sure your boilerplate creates this file.`);
+}
 
 run(generator, template, ejsOpen, ejsClose)
   .then(() => {

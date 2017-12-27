@@ -17,6 +17,15 @@ describe('Application bootstrap entry point', () => {
     });
   });
 
+  it('should throw an error if `.yo-rc.json` is not present', (done) => {
+    exec(`node ${ROOT_APP}/index.js --generator willmendesneto/generator-poi --ejs-open 0_- --ejs-close -_0`, (error, stdout, stderr) => {
+      assert(!!stdout);
+      assert(!!stderr);
+      assert(/File '.yo-rc.json' is not present in the repository/.test(stderr));
+      done();
+    });
+  });
+
   it('should return a help message if entrypoint receives `--helper`', (done) => {
     exec(`node ${ROOT_APP}/index.js --helper`, (error, stdout, stderr) => {
       assert(stdout === '');
