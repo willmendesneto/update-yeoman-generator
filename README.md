@@ -11,6 +11,22 @@
 
 A script to help update repositories using Yeoman generators to the latest version.
 
+## Requirements
+
+To use this package the generator should:
+
+- Creates a `.yo-rc.json` storing the version of your application. It should follow the Yeoman storage specs.
+
+```json
+// .yo-rc.json
+{
+  "generator-poi": {
+    "version": "1.0.0"
+  }
+}
+```
+
+
 ## Setup
 
 ### Private repositories
