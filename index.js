@@ -26,7 +26,7 @@ const { argv } = require('yargs')
   .alias('h', 'help')
   .epilog('\n\nCopyright 2017');
 
-printMessage(chalk.inverse(' INFO ') + '... Starting `update-yeoman-generator` script');
+printMessage(chalk.inverse(' INFO ') + ' Starting `update-yeoman-generator` script');
 
 const {
   generator,
@@ -50,8 +50,8 @@ run(generator, template, ejsOpen, ejsClose)
 🎉 ${chalk.green('Success')} 🎉
 
 Next steps:
-${chalk.green(' ✔ ')} Run ${chalk.white('npm install')} to update your Node Packages.
-${chalk.green(' ✔ ')} Run ${chalk.white('npm test')} to make sure your tests are passing.
-${chalk.green(' ✔ ')} Run ${chalk.white('npm start')} to see the chages on the browser.`)
+${chalk.green(' ✔ ')} Run ${chalk.green('npm install')} to update your Node Packages.
+${chalk.green(' ✔ ')} Run ${chalk.green('npm test')} to make sure your tests are passing.
+${chalk.green(' ✔ ')} Run ${chalk.green('npm start')} to see the chages on the browser.`)
   })
   .catch((err) => printMessage(chalk.red(err)));
