@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
+
+## [1.2.0][] - 2017-12-30
 ### Added
 - Created `update-yeoman-boilerplate`
 - Testing file operations utilities
@@ -19,3 +21,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Refactor
 - Changing file structure
+
+
+[Unreleased]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/willmendesneto/update-yeoman-generator/tree/v1.2.0
