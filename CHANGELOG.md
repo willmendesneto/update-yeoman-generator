@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
+
+## [1.2.1][] - 2017-12-31
 ### Added
 - Improving message output
 
@@ -25,5 +27,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Changing file structure
 
 
-[Unreleased]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.0...HEAD
+[Unreleased]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.1...HEAD
+[1.2.1]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/willmendesneto/update-yeoman-generator/tree/v1.2.0
