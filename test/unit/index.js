@@ -43,6 +43,7 @@ describe('Application bootstrap entry point', () => {
 
   it('should return the version value if entrypoint receives `--version`', (done) => {
     exec(`node ${ROOT_APP}/index.js --version`, (error, stdout, stderr) => {
+      assert(stderr === '');
       assert(stdout.indexOf(version) !== -1);
       done();
     });

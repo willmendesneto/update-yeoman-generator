@@ -4,7 +4,12 @@
   "description": "update-yeoman-generator - Update your Yeoman generator with style",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "editorconfig-tools-check": "editorconfig-tools check ./lib/** ./test/**",
+    "pretest": "npm run lint && npm run editorconfig-tools-check",
+    "lint": "eslint .",
+    "test": "mocha",
+    "tdd": "mocha -w",
+    "version": "version-changelog CHANGELOG.md && changelog-verify CHANGELOG.md && git add CHANGELOG.md"
   },
   "bin": {
     "update-yeoman-generator": "index.js"
@@ -30,6 +35,15 @@
     "yargs": "^10.0.3"
   },
   "devDependencies": {
-    "mocha": "^4.0.1"
+    "changelog-verify": "^1.1.0",
+    "editorconfig-tools": "^0.1.1",
+    "eslint": "^4.14.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^4.0.1",
+    "version-changelog": "^2.1.0"
   }
 }

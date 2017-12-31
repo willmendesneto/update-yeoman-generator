@@ -11,6 +11,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Adding tests for merge tasks
 - Adding requirements topic
 - Throws if repository doesn't have
+- Adding `CHANGELOG.md` validation
+
+## Chore
+- Adding `.editor-config` validation
+- Adding `.eslint` validation
 
 ### Refactor
 - Changing file structure

@@ -2,20 +2,22 @@
 const run = require('./lib/run');
 const chalk = require('chalk');
 const upath = require('upath');
-const { fileExists } = require('./lib/util');
+const { fileExists, printMessage } = require('./lib/util');
+const {
+  DEFAULT_EJS_OPEN,
+  DEFAULT_EJS_CLOSE,
+  DEFAULT_TEMPLATES_FOLDER,
+} = require('./lib/constants');
 
 const { argv } = require('yargs')
   .describe('generator', 'Name of the Github generator. It should be in format `<github-user>/<github-repository>`')
-  .describe('template', `Optional: String with a prefix for your templates folder based on the root folder of the generator repository.
-  
+  .describe('template', `Optional: String with a prefix for your templates folder based on the root folder of the generator repository. Default: "${DEFAULT_TEMPLATES_FOLDER}"
+
   ex: update-yeoman-generator --generator willmendesneto/generate-poi --template-prefix app/templates
   `)
-  .describe('ejs-open', 'Optional: `.ejs` File delimiter for open tag.')
-  .describe('ejs-close', 'Optional: `.ejs` File delimiter for close tag.')
+  .describe('ejs-open', `Optional: '.ejs' File delimiter for open tag. Default: "${DEFAULT_TEMPLATES_FOLDER}"`)
+  .describe('ejs-close', `Optional: '.ejs' File delimiter for close tag. Default: "${DEFAULT_TEMPLATES_FOLDER}"`)
   .string('template')
-  .option('template', { default: 'app/templates' })
-  .option('ejs-open', { default: '<%' })
-  .option('ejs-close', { default: '%>' })
   .check(({ generator }) => generator.split('/').length === 2)
   .demandOption(['generator'])
   .help('h')
@@ -24,9 +26,14 @@ const { argv } = require('yargs')
   .alias('h', 'help')
   .epilog('\n\nCopyright 2017');
 
-console.log(chalk.blue('... Starting `update-yeoman-generator` script'));
+printMessage(chalk.inverse(' INFO ') + '... Starting `update-yeoman-generator` script');
 
-const { generator, template, ejsOpen, ejsClose } = argv;
+const {
+  generator,
+  template = DEFAULT_TEMPLATES_FOLDER,
+  ejsOpen = DEFAULT_EJS_OPEN,
+  ejsClose = DEFAULT_EJS_CLOSE
+} = argv;
 
 const yoRcJsonPath = upath.join(process.cwd(), '.yo-rc.json');
 
@@ -38,13 +45,13 @@ if (!fileExists(yoRcJsonPath)) {
 
 run(generator, template, ejsOpen, ejsClose)
   .then(() => {
-    console.log(chalk.green(`
+    printMessage(`
 
-🎉 Success 🎉
+🎉 ${chalk.green('Success')} 🎉
 
 Next steps:
-- run 'npm install' to update your Node Packages.
-- run 'npm test' to make sure your tests are passing.
-- run 'npm start' to see the chages on the browser.`))
+${chalk.green(' ✔ ')} Run ${chalk.white('npm install')} to update your Node Packages.
+${chalk.green(' ✔ ')} Run ${chalk.white('npm test')} to make sure your tests are passing.
+${chalk.green(' ✔ ')} Run ${chalk.white('npm start')} to see the chages on the browser.`)
   })
-  .catch((err) => console.log(chalk.red(err)));
+  .catch((err) => printMessage(chalk.red(err)));

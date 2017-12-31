@@ -23,11 +23,5 @@ pids
 .vscode
 
 # ignore build and dist for now
-/demo/dist
-/dist
-/lib
 /coverage
 temp
-
-# ignore inline compiling
-/logs
