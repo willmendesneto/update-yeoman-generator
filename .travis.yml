@@ -1,0 +1,13 @@
+language: node_js
+cache:
+  directories:
+    - node_modules
+os:
+  - linux
+  - osx
+before_install:
+  - npm install -g --no-progress npm@latest
+install:
+  - npm install --no-progress
+script:
+  - npm test -- -R dot
