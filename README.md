@@ -1,5 +1,7 @@
 # update-yeoman-generator
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/willmendesneto/update-yeoman-generator.svg)](https://greenkeeper.io/)
+
 > Update your Yeoman generator with style
 
 [![MIT License][license-badge]][license]
