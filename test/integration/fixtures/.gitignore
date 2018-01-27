@@ -4,7 +4,6 @@ coverage/
 .DS_Store
 *.swp
 *.swo
-test/lib/folder
 
 # Logs
 logs
@@ -23,6 +22,11 @@ pids
 .vscode
 
 # ignore build and dist for now
+/demo/dist
+/dist
+/lib
 /coverage
-/test/integration/fixtures
 temp
+
+# ignore inline compiling
+/logs
