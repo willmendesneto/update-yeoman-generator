@@ -5,7 +5,7 @@ const assert = require('assert');
 const ROOT_APP = resolve(join(__dirname, './../../'));
 const BOILERPLATE_TEST_APP = resolve(join(__dirname, './fixtures'));
 
-describe('Application bootstrap entry point', () => {
+describe('Integration: running the scripts', () => {
   let STDOUT;
   let STDERROR;
   before((done) => {
