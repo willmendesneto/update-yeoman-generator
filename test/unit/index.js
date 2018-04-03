@@ -5,7 +5,7 @@ const { version } = require('../../package.json');
 
 const ROOT_APP = resolve(join(__dirname, './../../'));
 
-describe('Application bootstrap entry point', () => {
+describe('Application bootstrap: index.js', () => {
 
   it('should throw an error if `generator` is not set', (done) => {
     exec(`node ${ROOT_APP}/index.js`, (error, stdout, stderr) => {
