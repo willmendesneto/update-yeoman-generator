@@ -32,7 +32,7 @@
     "lodash": "^4.17.4",
     "mkdirp": "^0.5.1",
     "node-diff3": "^1.0.0",
-    "node-fetch": "^1.7.3",
+    "node-fetch": "^2.1.2",
     "upath": "^1.0.2",
     "yargs": "^11.0.0"
   },
