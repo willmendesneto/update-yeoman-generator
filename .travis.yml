@@ -4,7 +4,6 @@ cache:
     - node_modules
 os:
   - linux
-  - osx
 before_install:
   - npm install -g --no-progress npm@latest
 install:
