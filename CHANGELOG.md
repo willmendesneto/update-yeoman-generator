@@ -5,6 +5,17 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
+### Updated
+- bumping node-fetch to 2.1.2
+- bumping eslint-plugin-node to 6.0.1
+- bumping version-changelog to 3.1.0
+
+### Updated
+- adding integration tests for the package
+- updating NPM tasks
+
+### Fixed
+- fixing GitHub diff feature
 
 ## [1.2.1][] - 2017-12-31
 ### Added
