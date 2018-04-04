@@ -7,7 +7,7 @@
     "editorconfig-tools-check": "editorconfig-tools check ./lib/** ./test/**",
     "pretest": "npm run lint && npm run editorconfig-tools-check",
     "lint": "eslint .",
-    "test:unit": "mocha --recursive test/unit",
+    "test": "mocha --recursive test/unit",
     "test:integration": "mocha --recursive test/integration",
     "tdd": "mocha -w",
     "version": "version-changelog CHANGELOG.md && changelog-verify CHANGELOG.md && git add CHANGELOG.md"

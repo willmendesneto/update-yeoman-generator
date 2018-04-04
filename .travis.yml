@@ -9,5 +9,5 @@ before_install:
 install:
   - npm install --no-progress
 script:
-  - npm run test:unit -- -R dot
+  - npm run test -- -R dot
   - npm run test:integration -- -R dot
