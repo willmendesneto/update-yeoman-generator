@@ -47,6 +47,7 @@ describe('Application bootstrap entry point', () => {
   });
 
   it('should show the added files', () => {
+    console.log(STDOUT);
     assert(/test\/integration\/fixtures\/new-file.js/.test(STDOUT));
     assert(/ADDED/.test(STDOUT));
   });

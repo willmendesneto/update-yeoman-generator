@@ -4,10 +4,10 @@ cache:
     - node_modules
 os:
   - linux
-  - osx
 before_install:
   - npm install -g --no-progress npm@latest
 install:
   - npm install --no-progress
 script:
-  - npm test -- -R dot
+  - npm run test:unit -- -R dot
+  - npm run test:integration -- -R dot

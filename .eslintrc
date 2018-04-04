@@ -1,4 +1,7 @@
 {
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
   "extends": "eslint:recommended",
   "env": {
     "browser": true,
@@ -93,7 +96,7 @@
     "max-lines": "error",
     "max-nested-callbacks": "error",
     "max-params": ["error", 5],
-    "max-statements": "error",
+    "max-statements": ["error", 16],
     "max-statements-per-line": "error",
     "multiline-comment-style": ["error", "separate-lines"],
     "multiline-ternary": ["error", "never"],
@@ -211,7 +214,6 @@
     "prefer-const": "error",
     "prefer-destructuring": "error",
     "prefer-numeric-literals": "error",
-    "prefer-promise-reject-errors": "error",
     "prefer-reflect": "error",
     "prefer-rest-params": "error",
     "prefer-spread": "error",

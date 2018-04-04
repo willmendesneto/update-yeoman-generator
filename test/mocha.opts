@@ -1,5 +1,4 @@
 --reporter spec
---recursive
 --exit
---timeout=5000
+--timeout=35000
 --check-leaks
