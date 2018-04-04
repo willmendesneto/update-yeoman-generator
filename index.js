@@ -43,15 +43,23 @@ if (!fileExists(yoRcJsonPath)) {
   Please make sure your boilerplate creates this file.`);
 }
 
-run(generator, template, ejsOpen, ejsClose)
-  .then(() => {
+const runApp = async () => {
+
+  try {
+    await run(generator, template, ejsOpen, ejsClose);
     printMessage(`
 
 🎉 ${chalk.green('Success')} 🎉
 
 Next steps:
-${chalk.green(' ✔ ')} Run ${chalk.green('npm install')} to update your Node Packages.
-${chalk.green(' ✔ ')} Run ${chalk.green('npm test')} to make sure your tests are passing.
-${chalk.green(' ✔ ')} Run ${chalk.green('npm start')} to see the chages on the browser.`)
-  })
-  .catch((err) => printMessage(chalk.red(err)));
+  ${chalk.green(' ✔ ')} Run ${chalk.green('npm install')} to update your Node Packages.
+  ${chalk.green(' ✔ ')} Run ${chalk.green('npm test')} to make sure your tests are passing.
+  ${chalk.green(' ✔ ')} Run ${chalk.green('npm start')} to see the chages on the browser.
+  `);
+
+  } catch (error) {
+    printMessage(chalk.red(error));
+  }
+}
+
+runApp();
