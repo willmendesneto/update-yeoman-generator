@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
+
+## [1.2.2][] - 2018-04-04
 ### Updated
 - bumping node-fetch to 2.1.2
 - bumping eslint-plugin-node to 6.0.1
@@ -38,6 +40,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Changing file structure
 
 
-[Unreleased]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.1...HEAD
+[Unreleased]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.2...HEAD
+[1.2.2]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.1...v1.2.2
 [1.2.1]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/willmendesneto/update-yeoman-generator/tree/v1.2.0
