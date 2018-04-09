@@ -33,6 +33,7 @@
     "mkdirp": "^0.5.1",
     "node-diff3": "^1.0.0",
     "node-fetch": "^2.1.2",
+    "node-github-diff": "^1.0.1",
     "upath": "^1.0.2",
     "yargs": "^11.0.0"
   },

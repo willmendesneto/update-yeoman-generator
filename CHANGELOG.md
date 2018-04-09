@@ -5,7 +5,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
-
+### Fixed
+- Using `node-github-diff` for get github diff patches between published versions
+ 
 ## [1.2.2][] - 2018-04-04
 ### Updated
 - bumping node-fetch to 2.1.2
