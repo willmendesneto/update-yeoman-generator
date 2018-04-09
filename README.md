@@ -33,19 +33,8 @@ To use this package the generator should:
 
 ### Private repositories
 
-In order to use update-yeoman-generator in private repositories you'll need to
-[create a personal access token](https://github.com/settings/tokens)
-which has permissions to read private repositories:
+This project is using `node-github-diff` for get github diff patches between published versions. If you are using for private repositories, please make sure you are [following the steps described at "Private repositories" section in `node-github-diff` package](https://github.com/willmendesneto/node-github-diff).
 
-![Token permissions](./assets/token.png)
-
-Then, set the environment variable `GITHUB_DIFF_TOKEN` to the token you've just created
-
-You can run the following in the command line or add it your `.bashrc`, `.zshrc` or in your command line integration file
-
-```bash
-export GITHUB_DIFF_TOKEN=<token>
-```
 
 ### Run update-yeoman-generator
 
