@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
+
+## [1.2.3][] - 2018-04-10
 ### Fixed
 - Using `node-github-diff` for get github diff patches between published versions
  
@@ -42,7 +44,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Changing file structure
 
 
-[Unreleased]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.2...HEAD
+[Unreleased]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.3...HEAD
+[1.2.3]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.2...v1.2.3
 [1.2.2]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.1...v1.2.2
 [1.2.1]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/willmendesneto/update-yeoman-generator/tree/v1.2.0
