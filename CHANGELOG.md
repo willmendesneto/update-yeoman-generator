@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
 
+## Added
+- Adding support for github token via `--github-token` tag
+
 ## [1.2.3][] - 2018-04-10
 ### Fixed
 - Using `node-github-diff` for get github diff patches between published versions
