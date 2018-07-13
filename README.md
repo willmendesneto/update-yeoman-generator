@@ -17,7 +17,7 @@ A script to help update repositories using Yeoman generators to the latest versi
 
 To use this package the generator should:
 
-- Creates a `.yo-rc.json` storing the version of your application. It should follow the Yeoman storage specs.
+- Creates a `.yo-rc.json` storing the version of your application. It should follow the [Yeoman storage specs](http://yeoman.io/authoring/storage.html).
 
 ```json
 // .yo-rc.json
