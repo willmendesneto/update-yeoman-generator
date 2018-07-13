@@ -1,6 +1,6 @@
 {
   "name": "update-yeoman-generator",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "update-yeoman-generator - Update your Yeoman generator with style",
   "main": "index.js",
   "scripts": {
