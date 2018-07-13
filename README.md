@@ -33,7 +33,11 @@ To use this package the generator should:
 
 ### Private repositories
 
-This project is using `node-github-diff` for get github diff patches between published versions. If you are using for private repositories, please make sure you are [following the steps described at "Private repositories" section in `node-github-diff` package](https://github.com/willmendesneto/node-github-diff).
+If you are using this project for private repositories, you'll need to [create a token](https://github.com/settings/tokens/new?scopes=notifications,repo&description=Update%20Yeoman%20Generator) with the *notifications* and *repo* permissions. After generate your token, pass the information token using the flag `--github-token` in your command.
+
+```bash
+update-yeoman-generator --generator <github-user>/<github-repository> --github-token <your-github-token>
+```
 
 
 ### Run update-yeoman-generator
@@ -45,6 +49,7 @@ npm install -g npm@latest
 ```
 
 ### Parameters
+
 -  `-g`, `--generator`      [required]                              Name of the Github generator. It should be in format                     
                             `update-yeoman-generator --generator <github-user>/<github-repository>`   
 -  `--version`              [optional]                              Show package version number
@@ -52,6 +57,7 @@ npm install -g npm@latest
 -  `--ejs-close`            [optional] [default: "%>"]              `.ejs` File delimiter for close tag.
 -  `-t`, `--template`       [optional] [default: "app/templates"]   String with a prefix for your templates
                             folder based on the root folder of the generator repository.
+-  `--github-token`         [optional]                              Github Token required for private repositories
 -  `-h`, `--help`           [optional]                              Show help command
 
 Inside the existing boilerplate generated repository run:
@@ -70,12 +76,28 @@ $ cd <your-project-generated-using-yeoman-generator>
 $ update-yeoman-generator --help
 Options:
   --version        Show version number                                 [boolean]
-  --ejs-open                                                     [default: "<%"]
-  --ejs-close                                                    [default: "%>"]
+  --github-token   Optional: Github Token required for private repositories.
+  --ejs-open       Optional: '.ejs' File delimiter for open tag. Default:
+                   "app/templates"
+  --ejs-close      Optional: '.ejs' File delimiter for close tag. Default:
+                   "app/templates"
   -h, --help       Show help                                           [boolean]
   -g, --generator  Name of the Github generator. It should be in format
                    `<github-user>/<github-repository>`                [required]
-  -t, --template                             [string] [default: "app/templates"]
+  -t, --template   Optional: String with a prefix for your templates folder
+                   based on the root folder of the generator repository.
+                   Default: "app/templates"
+
+                   EX:
+
+                   update-yeoman-generator --generator
+                   willmendesneto/generate-poi --template-prefix
+                   app/templates
+
+                   update-yeoman-generator --generator
+                   <github-user>/<github-repository> --github-token
+                   <your-github-token> --template-prefix app/templates
+                                                                        [string]
 
 
 
