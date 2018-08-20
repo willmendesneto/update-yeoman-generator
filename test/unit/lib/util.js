@@ -47,7 +47,7 @@ describe('Utility functions', () => {
       };
       const yoRcJson = {
         version: '1.1.1',
-      }
+      };
       assert.deepEqual(
         formatProps(packageJson, yoRcJson),
         {
@@ -72,7 +72,7 @@ describe('Utility functions', () => {
       };
       const yoRcJson = {
         version: '1.1.1',
-      }
+      };
       props = formatProps(packageJson, yoRcJson);
     });
 
@@ -94,7 +94,7 @@ describe('Utility functions', () => {
       };
       const yoRcJson = {
         version: '1.1.1',
-      }
+      };
       props = formatProps(packageJson, yoRcJson);
     });
 

@@ -66,6 +66,6 @@ Next steps:
   } catch (error) {
     printMessage(chalk.red(error));
   }
-}
+};
 
 runApp();

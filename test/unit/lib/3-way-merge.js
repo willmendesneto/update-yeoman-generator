@@ -16,7 +16,7 @@ describe('3 Way merge', () => {
   const newFilePath = __dirname + '/folder/new-file.txt';
   const fileA = 'My first file';
   const fileOriginal = 'first file';
-  const fileB = 'My second file'
+  const fileB = 'My second file';
 
   describe('mergeFileIfExists', ()=> {
 
@@ -53,7 +53,7 @@ My second file
     it('should solve the diff of files `A` and `B` based on the original', () => {
       const fileA = 'My first file';
       const fileOriginal = 'first file';
-      const fileB = 'first file'
+      const fileB = 'first file';
       assert.equal(mergeFiles(fileA, fileOriginal, fileB), 'My first file');
     });
   });
