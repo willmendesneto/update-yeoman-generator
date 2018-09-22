@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
 
+### Updated
+- Updating node packages
+- Update eslint-plugin-node to the latest version 🚀 
+- simplifying eslint rules
+- Add link to info about Yeoman storage options
+
 ## [1.2.4][] - 2018-07-13
 
 ## Added
