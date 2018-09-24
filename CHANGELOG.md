@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
 
+## [1.2.6][] - 2018-09-24
+
 ### Updated
 - Removing `@octokit/rest` package
 - Bumping `node-github-diff` to `v2.0.1`
@@ -64,7 +66,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Changing file structure
 
 
-[Unreleased]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.5...HEAD
+[Unreleased]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.6...HEAD
+[1.2.6]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.5...v1.2.6
 [1.2.5]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.4...v1.2.5
 [1.2.4]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.3...v1.2.4
 [1.2.3]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.2...v1.2.3
