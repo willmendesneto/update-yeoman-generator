@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Updated
 - Removing `@octokit/rest` package
+- Bumping `node-github-diff` to `v2.0.1`
 
 ## [1.2.5][] - 2018-09-22
 
