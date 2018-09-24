@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
 
+### Updated
+- Removing `@octokit/rest` package
+
 ## [1.2.5][] - 2018-09-22
 
 ### Updated

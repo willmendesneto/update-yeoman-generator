@@ -25,7 +25,6 @@
   "author": "Will Mendes <willmendesneto@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@octokit/rest": "^15.2.6",
     "chalk": "^2.3.0",
     "ejs": "^2.5.7",
     "is-binary-buffer": "^2.0.0",
