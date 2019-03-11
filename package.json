@@ -38,7 +38,7 @@
     "node-diff3": "^1.0.0",
     "node-fetch": "^2.3.0",
     "node-github-diff": "^2.0.3",
-    "upath": "^1.0.2",
+    "upath": "^1.1.2",
     "yargs": "^12.0.5"
   },
   "devDependencies": {
