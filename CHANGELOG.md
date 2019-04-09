@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
 
+### Updated
+
+- Bumping `node-github-diff` to `v2.2.0` to align with latest version of Github API
+
 ## [1.2.7][] - 2018-12-14
 
 ### Updated
@@ -99,7 +103,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [1.2.2]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.1...v1.2.2
 [1.2.1]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/willmendesneto/update-yeoman-generator/tree/v1.2.0
-
-
-[Unreleased]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.7...HEAD
+[unreleased]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.7...HEAD
 [1.2.7]: https://github.com/willmendesneto/update-yeoman-generator/tree/v1.2.7
