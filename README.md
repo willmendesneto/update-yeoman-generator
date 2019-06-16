@@ -110,7 +110,6 @@ $ update-yeoman-generator --generator <github-user>/<github-repository>
 ## Author
 
 **Wilson Mendes (willmendesneto)**
-+ <https://plus.google.com/+WilsonMendes>
 + <https://twitter.com/willmendesneto>
 + <http://github.com/willmendesneto>
 
