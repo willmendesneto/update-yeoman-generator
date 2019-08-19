@@ -39,7 +39,7 @@
     "node-fetch": "^2.3.0",
     "node-github-diff": "^2.2.0",
     "upath": "^1.0.2",
-    "yargs": "^13.2.4"
+    "yargs": "^14.0.0"
   },
   "devDependencies": {
     "changelog-verify": "^1.1.0",
