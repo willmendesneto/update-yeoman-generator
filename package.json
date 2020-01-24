@@ -34,7 +34,7 @@
     "ejs": "^2.5.7",
     "is-binary-buffer": "^2.0.0",
     "lodash": "^4.17.4",
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^1.0.0",
     "node-diff3": "^1.0.0",
     "node-fetch": "^2.3.0",
     "node-github-diff": "^2.2.0",
