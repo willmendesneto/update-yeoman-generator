@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Updated
 
 - Updating dependencies to the latest
+- Updating `node-github-diff` to v3.0.0
+- Updating NodeJS to v12.16.2
 
 ## [1.2.8][] - 2019-04-09
 
@@ -111,7 +113,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [1.2.0]: https://github.com/willmendesneto/update-yeoman-generator/tree/v1.2.0
 [unreleased]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.7...HEAD
 [1.2.7]: https://github.com/willmendesneto/update-yeoman-generator/tree/v1.2.7
-
-
-[Unreleased]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.8...HEAD
+[unreleased]: https://github.com/willmendesneto/update-yeoman-generator/compare/v1.2.8...HEAD
 [1.2.8]: https://github.com/willmendesneto/update-yeoman-generator/tree/v1.2.8
