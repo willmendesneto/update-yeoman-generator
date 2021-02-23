@@ -32,7 +32,7 @@
     "chalk": "^2.3.0",
     "ejs": "^3.1.6",
     "is-binary-buffer": "^2.0.0",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "mkdirp": "^0.5.1",
     "node-diff3": "^2.1.0",
     "node-fetch": "^2.6.1",
