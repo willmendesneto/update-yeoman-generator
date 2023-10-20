@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
 
+## [3.0.0][] - 2023-10-20
+
 ### Updated
 - Updating dependencies
 - Upgrading node to v18
@@ -126,5 +128,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [1.2.8]: https://github.com/willmendesneto/update-yeoman-generator/tree/v1.2.8
 
 
-[Unreleased]: https://github.com/willmendesneto/update-yeoman-generator/compare/v2.0.0...HEAD
+[Unreleased]: https://github.com/willmendesneto/update-yeoman-generator/compare/v3.0.0...HEAD
+[3.0.0]: https://github.com/willmendesneto/update-yeoman-generator/compare/v2.0.0...v3.0.0
 [2.0.0]: https://github.com/willmendesneto/update-yeoman-generator/tree/v2.0.0
