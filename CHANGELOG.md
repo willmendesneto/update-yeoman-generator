@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
 
+### Updated
+- Updating dependencies
+- Upgrading node to v18
+
 ## [2.0.0][] - 2020-05-06
 
 ### Updated
