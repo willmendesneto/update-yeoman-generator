@@ -11,6 +11,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Updating dependencies
 - Upgrading node to v18
 
+### Fixed
+- Fixing dependency bump due to ES and require() imports. This package does not support ES module import at this stage
+
 ## [2.0.0][] - 2020-05-06
 
 ### Updated
