@@ -58,6 +58,7 @@ npm install -g npm@latest
 -  `-t`, `--template`       [optional] [default: "app/templates"]   String with a prefix for your templates
                             folder based on the root folder of the generator repository.
 -  `--github-token`         [optional]                              Github Token required for private repositories
+-  `--json-storage-file`     [optional] [default: ".yo-rc.json"]     JSON file based on the root folder of the generator repository with the storage data.
 -  `-h`, `--help`           [optional]                              Show help command
 
 Inside the existing boilerplate generated repository run:
@@ -75,28 +76,33 @@ $ npm install -g update-yeoman-generator
 $ cd <your-project-generated-using-yeoman-generator>
 $ update-yeoman-generator --help
 Options:
-  --version        Show version number                                 [boolean]
-  --github-token   Optional: Github Token required for private repositories.
-  --ejs-open       Optional: '.ejs' File delimiter for open tag. Default:
-                   "app/templates"
-  --ejs-close      Optional: '.ejs' File delimiter for close tag. Default:
-                   "app/templates"
-  -h, --help       Show help                                           [boolean]
-  -g, --generator  Name of the Github generator. It should be in format
-                   `<github-user>/<github-repository>`                [required]
-  -t, --template   Optional: String with a prefix for your templates folder
-                   based on the root folder of the generator repository.
-                   Default: "app/templates"
+      --version            Show version number                         [boolean]
+      --json-storage-file  Optional: JSON file based on the root folder of the
+                           generator repository with the storage data. Default:
+                           ".yo-rc.json"
+      --github-token       Optional: Github Token required for private
+                           repositories.
+      --ejs-open           Optional: '.ejs' File delimiter for open tag.
+                           Default: "app/templates"
+      --ejs-close          Optional: '.ejs' File delimiter for close tag.
+                           Default: "app/templates"
+  -h, --help               Show help                                   [boolean]
+  -g, --generator          Name of the Github generator. It should be in format
+                           `<github-user>/<github-repository>`        [required]
+  -t, --template           Optional: String with a prefix for your templates
+                           folder based on the root folder of the generator
+                           repository. Default: "app/templates"
 
-                   EX:
+                           EX:
 
-                   update-yeoman-generator --generator
-                   willmendesneto/generate-poi --template-prefix
-                   app/templates
+                           update-yeoman-generator --generator
+                           willmendesneto/generate-poi --template-prefix
+                           app/templates
 
-                   update-yeoman-generator --generator
-                   <github-user>/<github-repository> --github-token
-                   <your-github-token> --template-prefix app/templates
+                           update-yeoman-generator --generator
+                           <github-user>/<github-repository> --github-token
+                           <your-github-token> --template-prefix
+                           app/templates
                                                                         [string]
 
 
